@@ -7,7 +7,7 @@
 import SwiftUI
 
 @available(macOS 12, iOS 15, *)
-enum AppColor {
+public enum AppColor {
     static let main = Color(light: .black, dark: .white)
     static let text = Color(light: .white, dark: .black)
 }
