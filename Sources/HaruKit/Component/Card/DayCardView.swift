@@ -14,7 +14,7 @@ public struct DayCardView: View {
     let title: String
     public var body: some View {
         ZStack(alignment: .bottomLeading) {
-            Image(icon: image)
+            Image(image: image)
                 .resizable()
                 .aspectRatio(2.5, contentMode: .fill)
                 .frame(maxWidth: .infinity)
