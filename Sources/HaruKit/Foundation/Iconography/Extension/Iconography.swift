@@ -6,6 +6,7 @@ public enum Iconography: String, CaseIterable {
     case setting = "Setting"
     
     //MARK: background
+    case bg_default = "DefaultBackground"
     case bg_01_diary = "Diary"
     case bg_02_choco = "Chocolate"
     case bg_03_white = "WhiteFlower"
