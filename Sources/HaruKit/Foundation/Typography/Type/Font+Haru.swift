@@ -34,11 +34,7 @@ public extension Font {
         customFont(weight: .thin, size: size)
     }
     
-    static func sonoLight(size: CGFloat) -> Font {
-        customFont(weight: .sonoLight, size: size)
-    }
-    
-    static func sonoMedium(size: CGFloat) -> Font {
-        customFont(weight: .sonoMedium, size: size)
+    static func date(size: CGFloat) -> Font {
+        customFont(weight: .date, size: size)
     }
 }

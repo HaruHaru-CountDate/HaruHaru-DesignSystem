@@ -10,14 +10,12 @@ public struct CustomFont {
         case light = "Pretendard-Light"
         case medium = "Pretendard-Medium"
         case thin = "Pretendard-Thin"
-        //MARK: sono
-        case sonoLight = "Sono-Light"
-        case sonoMedium = "Sono-Medium"
+        case date = "Rix X ladywatermelon OTF Regular"
     }
     
     public static func register() {
         CustomFont.Weight.allCases.forEach {
-            if let fontURL = Bundle.module.url(forResource: $0.rawValue, withExtension: "ttf"),
+            if let fontURL = Bundle.module.url(forResource: $0.rawValue, withExtension: "otf"),
                let fontDataProvider = CGDataProvider(url: fontURL as CFURL),
                let font = CGFont(fontDataProvider) {
                 var error: Unmanaged<CFError>?
